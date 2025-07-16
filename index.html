@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow fixed w-full z-10">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">MyPortfolio</h1>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="pt-24 pb-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white"
+    >
+      <div class="container mx-auto flex flex-col items-center text-center">
+        <img
+          src="MyPhoto.jpg"
+          alt="Profile"
+          class="w-32 h-32 rounded-full border-4 border-white mb-4"
+        />
+        <h2 class="text-4xl font-bold mb-2">MAHEEN S BADEGHAR</h2>
+        <p class="text-xl mb-4">Frontend Web Developer</p>
+        <p class="italic mb-6">
+          "Code is like humor. When you have to explain it, it’s bad."
+        </p>
+        <a
+          href="resume.pdf"
+          download
+          class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition"
+          >Download Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- About Text -->
+          <div class="md:w-1/2 bg-white p-6 rounded-lg shadow">
+            <p class="mb-4">
+              I am a passionate web developer with experience in building
+              responsive and user-friendly websites. I enjoy learning new
+              technologies and constantly improving my skills.
+            </p>
+            <p>
+              My goal is to work on innovative projects that challenge me and
+              help me grow as a developer.
+            </p>
+          </div>
+
+          <!-- Skills and Timeline -->
+          <div class="md:w-1/2">
+            <div class="bg-white p-6 rounded-lg shadow mb-6">
+              <h3 class="text-xl font-semibold mb-4">Skills</h3>
+              <ul class="list-disc list-inside space-y-2">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Tailwind CSS</li>
+                <li>Git & GitHub</li>
+              </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-xl font-semibold mb-4">Education</h3>
+              <ul class="space-y-2">
+                <li>
+                  <strong>B.E. Computer Science</strong> - 2025 (Jain College Of
+                  Engineering And Technology Hubballi)
+                </li>
+                <li>
+                  <strong>Web Development Course</strong> - 2025 (Online
+                  Bootcamp)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Project Card -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg hover:scale-105 transition"
+          >
+            <img
+              src="images/project1.jpg"
+              alt="Project 1"
+              class="mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+            <p class="mb-2">
+              A personal portfolio to showcase my work and skills. Built with
+              HTML & Tailwind.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View on GitHub</a>
+          </div>
+
+          <!-- Project Card -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg hover:scale-105 transition"
+          >
+            <img
+              src="images/project2.jpg"
+              alt="Project 2"
+              class="mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+            <p class="mb-2">
+              A simple weather application using HTML, CSS, JS, and API
+              integration.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View on GitHub</a>
+          </div>
+
+          <!-- Project Card -->
+          <div
+            class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg hover:scale-105 transition"
+          >
+            <img
+              src="images/project3.jpg"
+              alt="Project 3"
+              class="mb-4 rounded-lg"
+            />
+            <h3 class="text-xl font-semibold mb-2">To-Do List App</h3>
+            <p class="mb-2">
+              A task management tool to add, delete, and track daily tasks.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+        <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow">
+          <div class="mb-4">
+            <label class="block mb-2 font-semibold">Name</label>
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2 font-semibold">Email</label>
+            <input
+              type="email"
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2 font-semibold">Message</label>
+            <textarea
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="flex space-x-4 mt-6">
+      <a href="#"
+        ><img src="fc.png" alt="Facebook" class="w-6"
+      /></a>
+      <a href="#"
+        ><img src="twt.png" alt="Twitter" class="w-6"
+      /></a>
+      <a href="#"
+        ><img src="idm.jpg" alt="LinkedIn" class="w-6"
+      /></a>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 text-center shadow mt-8">
+      <p>
+        © 2025 MAHEEN S BADEGHAR | Follow me:
+        <a href="#" class="text-blue-500 ml-2">LinkedIn</a> |
+        <a href="#" class="text-blue-500 ml-2">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>
